@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title> Living Styles Guide </title>
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="mycss.css">
+
+    
+    </head>
+ 
+<body> 
+     <div id="wrapper"> 
+        	<div id="callout"> 
+        		<p> HIT226 Prep for Unit Activity</p>       	
+        	</div>
+        	
+        	<header>
+        	<a href= "#"><img src="pictures/header.png" alt="logo Icon" /></a>
+        	</header>
+        	<nav>
+        		<ul>  
+        		
+        			<li><a href="index.html">Home</a></li>
+        			<li><a href="tips.html">Tips</a></li>
+        			<li><a href="components.html">Components</a></li>
+                    <li class='active'><a href="typography.html">Typography</a></li>
+                    <li><a href="color.html">Colour Palette</a></li>
+        			<li><a href="help.html">Helpful Links</a></li>
+        			<li><a href="refss.html">References</a></li>
+        		</ul>
+         </nav>
+        		<div class="clearfix">
+        		</div>
+    </div>
+    
+    <section class="type__head">
+        <h1>aFew Examples of Typography Styles are....</h1>
+        
+         
+        <p>The purpose of this HTML is to help determine what default settings are with CSS and to make sure that all possible HTML Elements are included in this HTML so as to not miss any possible Elements when designing a site.</p>
+         
+        <hr />
+    </section>
+
+    <section class="h__types__heading">
+    <h1 id="headings">Headings</h1>
+    </section>
+    <section class="h__types" >   
+        
+         
+        <h1>This happens if you use the h1 tag</h1>
+        <h2>This happens if you use the h2 tag</h2>
+        <h3>This happens if you use the h3 tag</h3>
+        <h4>This happens if you use the h4 tag</h4>
+        <h5>This happens if you use the h5 tag</h5>
+        <h6>This happens if you use the h6 tag</h6>
+         
+        <small><a href="#wrapper">[top]</a></small>
+        <hr />
+    </section>
+         
+         <section class = "para">
+        <h1 id="paragraph"> Basic Paragraphs</h1>
+         
+        <p> This is an example of a basic paragraph. You can make this paragraph as large or as small as you want. You can also use breaks in between your paragraphs. To do this you will use the break tag. To implement this tag use "br" inside of the greater than and less than signs. 
+        <br>
+        This tag does not need a closing tag. By using it you can put breaks inbetween the paragraphs on your page without creating new paragraph using the "p" tag. <br> The type of font used in a webpage is also taken account for in typography. Although in this webpage the general font family used is San Sirif. In this segment of the page the font family used has been Moonspace.
+        </p>
+              <aside class = "font__pic">
+                    <figure>
+       		               <img src="pictures/design-fonts-bentonsans.jpg" alt="colors">
+                            <figcaption> Fig 5. -  Typography Example (Indiana University 2017) </figcaption>
+                        </figure>
+             </aside> 
+         
+        <p>Next to this text you can see that if you use the emphasis tag. <em>emphasis</em> inside of the greater than and less than signs you will
+            need to "em" and "/em". You can also do this with the bold tag. To make a word or sentance bold <b>Use</b> "b" in side of the greater than and less than signs. Use "/b" to end the section in bold.</p>
+         
+        <small><a href="#wrapper">[top]</a></small>
+        <hr />
+    </section>
+         
+    <section class="lists">
+        <h1 id="list_types">List Types</h1>
+         
+        <h3>You can essentially have two typs of basics lists in HTML an unordered list or an odered list. Simply for the fun of it and for the example this section of the page has yet again been given a new font family. This time the section has a font family of cursive.</h3>
+            <p> Where in an ordered list you would use the "ol" tag and "/ol" tag inside of the greater than and less than signs.<br> To creat an unordered list you would use the "ul" tag and the "/ul" tag inside of the greater than and less than signs.</p>
+        <dl>
+            <dt>This is where you would put the title of the list</dt>
+            <dd>This is where you would put the divisions</dd>
+        </dl>
+         
+        <h3>Ordered List</h3>
+        <ol>
+            <li class="test">List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+        </ol>
+         
+        <h3>Unordered List</h3>
+        <ul>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+        </ul>
+         
+        <small><a href="#wrapper">[top]</a></small>
+        <hr />
+    </section>
+         
+        <h1 id="form_elements">Legends and Form Elements</h1>
+         
+        <fieldset>
+            
+            <legend>This would be any kind of small needed detail such as: CDU Information</legend>
+         
+            <p> This is just a normal paragraph in which you could explain what your form is used for. Forms can and are used for an array of things, from signing up for a club, to tax refunds, to banking. In current day thay have become a normal element added to an abundance of websites.</p>
+         
+            <form>
+                <h2>Insert the Form title here</h2>
+         
+                <p>This would be a good place to give the person answering the form some specifications. Such as: use only a blue or black pen, or attach a picture with this form. <br> For this example the below section shows a sign up form for a website.</p>
+         
+                <p><label for="text_field">Full Name:</label><br />
+                <input type="text" id="text_field" /></p>
+         
+                <p><label for="text_area">Type Username:</label><br />
+                <textarea id="text_area"></textarea></p>
+         
+                <p><label for="select_element">Amount wanted or Number of People - To determain account status, Gold, Platinum, Silver:</label><br/>
+                    <select name="select_element">
+                    <optgroup label="Amount wanted:">
+                        <option value="1">1 - 5 Kg</option>
+                        <option value="2">6 - 15 Kg </option>
+                        <option value="3">16 - 30 Kg </option>
+                    </optgroup>
+                    <optgroup label="Number of people:">
+                        <option value="1">1 - 5</option>
+                        <option value="2">5 - 15</option>
+                        <option value="3">15 - 30</option>
+                    </optgroup>
+                </select></p>
+         
+                <p><label for="radio_buttons">Who Told You About Us?</label><br />
+                    <input type="radio" class="radio" name="radio_button" value="radio_1" /> Facebook<br/>
+                        <input type="radio" class="radio" name="radio_button" value="radio_2" /> Tv commerical<br/>
+                        <input type="radio" class="radio" name="radio_button" value="radio_3" /> Friends or Family<br/>
+                </p>
+         
+                <p><label for="checkboxes">Tick out of the Following what defualt security question you would like:</label><br />
+                    <input type="checkbox" class="checkbox" name="checkboxes" value="check_1" /> The name of my first pet was?<br/>
+                        <input type="checkbox" class="checkbox" name="checkboxes" value="check_2" /> My favourite food is?<br/>
+                        <input type="checkbox" class="checkbox" name="checkboxes" value="check_3" /> My mothers maiden name is?<br/>
+                </p>
+         
+                <p><label for="password">Password:</label><br />
+                    <input type="password" class="password" name="password" />
+                </p>
+         
+                <p><label for="file">Input Passport picture sized JPEG</label><br />
+                    <input type="file" class="file" name="file" />
+                </p>
+         
+         
+                <p><input class="button" type="reset" value="Clear" /> <input class="button" type="submit" value="Submit" />
+                </p>
+         
+         
+         
+            </form>
+         
+        </fieldset>
+         
+        <small><a href="#wrapper">[top]</a></small>
+        <hr />
+         
+    <section class="tags">
+        <h1 id="misc">Misc Stuff - Supperscript, Subscript, Cite and Abbreviations</h1>
+         
+        <p>So next to this sentance we are going to see what happens when you use superscript.<sup>This is what happens.</sup> To do this you use the "sup" tag inside of the greater than and less than sign. <br> Now that you are aware of supercript, it is time to use subscript. The following four words are written using the subscript tag. <sub>This is what happens</sub> To do this you use the "sub" tag inside of the greater than and less than signs, to end the sector simple instert "/sub" in another set of greater than and less than signs. </p>
+   
+        <p>Next we learn how to use the cite tag. This tag can be used when referancing on webpages. Examples can be seen all over this website as all information gotten off of other sources has been cited within brackets. To use the cite tag simply type the word "cite" inside of the greater than and less than signs. To end the citation type "/cite" inside of the greater than and less than signs. <cite>(Bali 2017)</cite>. Now thanks to the tag it can clearly be seen that the work within this paragraph was written by or gotten from this websites author. </p>
+    
+    
+        <p>Finally the abreviation tag is used to abreveate words. Like the acronym tag to use this tag you need to specify a title. The title specified will be the word you are trying to abbreviate. I.e. "abbr title="United States of America" inside of the greater than and less than signs. To end the tag simple type "/abbr" inside of the greater than and less than signs. Now look at the example here. <abbr title="United States of America">USA</abbr> Again the coder can see the full form and the abreviated version but the reader can only see the abbreviated, in this case "USA."</p>
+    </section>
+         
+        <small><a href="#wrapper">[top]</a></small>
+    
+    <footer class="content__footer">
+          <p>&#169;Copyright - Living Style Guide by Reema Bali, s252001, 2017</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,865 @@
+@CHARSET "ISO-8859-1";
+
+<style>
+*{
+box-sizing: border-box;
+}
+
+body { 
+	background-color:ghostwhite;
+	font-family: sans-serif;
+	overflow: auto;	
+}
+
+h1 {
+	text-align: center;
+	padding-left: 5%;
+	color:darkblue;
+    font-size: 60px;
+} 
+
+p { 
+	padding: 2%;
+	color: #000000;
+}
+
+img{
+	text-align: center;
+	max-width: 100%;
+	height: 100%;
+	width: auto;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 100%;
+	border-radius: 2px;
+	box-shadow: 0 0 10px 0px rgb(12,3,25,0.8);
+	height: 50%;
+    background-image: url(pictures/bluee.jpg);
+
+}
+footer {
+    float: none;
+    display: block;
+}
+
+/*===================================BIT ABOVE THE HEADER IMAGE WHERE UNIT TITLE IS =====================================*/
+#callout {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+#callout p {
+	text-align: right;
+	font size: 13px;
+	padding: 0.1% 5% 0 0;
+	color: #000000;
+}
+
+header {
+	width: 98%;
+	min-height: 125px;
+	text-align: center;	
+}
+
+header img {
+    width:98%;
+    padding-top: 3%
+}
+
+/*==============================================================NAV===========================================================*/
+nav ul {
+	list-style: none;
+	margin: 0;
+    padding-top: 3.2%;
+    padding-right:3%;
+    padding-left: 3%
+	
+
+}
+
+nav ul li{
+	float: left;
+	border: 1px solid #000000;
+	width: 14%;
+	
+}
+
+nav ul li a {
+	background:#ffffff;
+	display: block;
+	padding: 5% 14%;
+	font-weight: bold;
+	font-size: 17px;
+	color:#000000;
+	text-decoration: none;
+	text-align: center;
+    
+	
+}
+
+nav ul li a:hover, nav ul li.active a{
+	background-color:#408080;
+	color: #ffffff;
+	
+}
+.clearfix {
+	clear: both;
+}
+
+/*==========================================================HOME PAGE========================================================*/
+.top__home {
+    font-size: 23px;
+    
+    
+}
+
+.top__home >ul {
+    list-style: none;
+    text-decoration:none;
+    padding-top: 0;
+}
+
+.right__col__home >h2 {
+    text-align: center;
+	padding-left: 5%;
+	color:darkblue;
+    font-size: 40px;
+}
+
+.right__home iframe {
+    height: 270px;
+    width: 60%;
+    margin-left: 20%
+    
+        
+}
+.vidcon {
+    margin-left: 2%;
+    font-size: 20px
+    
+        
+}
+.vidcon> h4 {
+    text-align: center;
+    
+}
+
+.section__1__home >h2 {
+    text-align: center;
+	padding-left: 5%;
+	color:darkblue;
+    font-size: 40px;
+}
+
+.section__1__home {
+	float: left; 
+	margin:0px;
+    font-size: 20px;
+    width:100%;
+}
+
+
+/*================================================================TIPS========================================================*/
+
+.tips1 {
+	width: 98%;
+	float: left;
+	margin:-2% 1% 4% 1%;
+	font-size: 23px ;
+    border: 3px solid darkblue;
+    text-decoration: none;
+    list-style: none;
+    background-color: gainsboro;
+}
+
+.tips1 >ul {
+    text-decoration: none;
+    list-style: none; 
+}
+
+.lay {
+   width:30%;
+	float: left;
+	margin: 1%;
+	text-align: center;
+    padding-left: 5%
+    
+}
+
+.inter__a {
+    width:60%;
+    height: auto;
+	float: left;
+	margin: 0;
+	text-align: center;
+    padding-top: 2%;
+    
+}
+
+.tips2 {
+    width: 98%;
+	float: left;
+	margin:-2% 1% 1% 1%;
+	font-size: 23px ;
+    border: 3px solid darkblue;
+    background-color: gainsboro;
+}
+
+.tips2 >ul {
+    text-decoration: none;
+    list-style: none; 
+}
+
+.piccy {
+	width:50%;
+	float: left;
+	margin: 1%;
+	text-align: center;
+}
+
+.typo {
+    width:40%;
+	float: left;
+	margin: 1%;
+	text-align: center;
+    padding-top: 12%;
+}
+
+/* ==================================================COMPONENTS===================================================================*/
+/* all about buttons and its display*/
+.i__c >ul{
+    text-decoration: none;
+    list-style: none; 
+}
+
+.i__c {
+    float:none;
+    font-size: 28px;
+    list-style: none;
+    text-decoration: none;
+    
+    
+}
+
+               /* Button Talk*/
+.buttons >h2 {
+    font-size: 50px;
+    color: midnightblue;
+    display: block;
+   
+}
+
+.buttons {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button__talk {
+    float:left;
+    font-size: 20px;
+}
+
+/* all about the card and its display*/
+.indent__1 {
+    float:none;
+    display: block;
+    padding-left: 2%
+}
+
+.indent__1 > h2 {
+    text-align: left;
+    color: midnightblue;
+    font-size: 50px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    border-color: black;
+    outline-color: black;
+    width:20%;
+    height:300px; 
+    float:none;
+    background-color:aliceblue;
+    display: block;
+
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+    border-radius: 5px 5px 0 0;
+    width:50%;
+    height: 55%;
+
+}
+
+.container {
+    padding-right: 2% ;
+    padding-bottom: 0;
+    text-align: center;
+    padding-top: 0;
+    margin: 0;
+    float: left;
+    width:98%;
+    height: auto;
+    
+}
+
+.container > p {
+    float: center;
+    margin: 0;
+    padding-top: 0;
+    padding-right: 2%;
+    height: auto;
+    width:98%;
+    
+}
+
+.talk__about__card {
+    float:none;
+    margin-right:auto;
+    padding-left: 1%;
+    font-size: 20px;
+    
+    
+}
+
+.talk__about__card >ul {
+    text-decoration: none;
+    list-style: none; 
+}
+
+/* all about tables and their display*/
+.tabble > h2 {
+    font-size: 50px;
+    color: midnightblue;
+    text-align: left;
+    width: 100%;
+    
+}
+
+.indent__2 {
+    float:left;
+    overflow: hidden;
+    display: block;
+    margin-left: -2%;
+    width: 98%
+    
+}
+
+td, th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.talk__about__table p {
+    float:left;
+    font-size: 20px;
+    padding-left: 2%;
+}
+
+/* all about the chips and its display*/
+.chip__j > h2 {
+    font-size: 50px;
+    color: midnightblue;
+
+}
+
+.chip__j {
+    padding-left: 2%
+}
+
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+     font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.talk__about__chipp p {
+    float:left;
+    font-size: 20px;
+    padding-left: 2%;
+}
+
+/* ==================================================TYPOGRAPHY===================================================================*/
+.h__types >h1 {
+    color: black;
+    text-align: center;
+    width: 98%;
+}
+
+.h__types {
+    text-align: center;
+   width:98%;
+}
+
+.type__head {
+    font-size: 20px;
+}
+
+.para >p {
+    font-family:monospace;
+    font-size: 20px;
+}
+
+.font__pic {
+    text-align: center;
+    
+}
+
+.tags {
+    font-size: 20px;
+}
+
+.lists {
+    font-size: 20px;
+    font-family:cursive;
+}
+
+/*======================================================COLOUR PAGE===============================================================*/
+
+.col__page {
+    float:left;
+    font-size: 20px;
+}
+
+.col__page ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.colour__tab > h2 {
+    font-size: 50px;
+    color: midnightblue;
+    text-align: left;
+    width: 100%;
+    
+}
+
+.colour__used_on__web {
+    float:left;
+    overflow: hidden;
+    display: block;
+    padding-left: 2%
+}
+
+td, th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.colour__table__talk {
+    float:left;
+    font-size: 20px;
+
+}
+
+.colour__table__talk >h2 {
+    float: none;
+    text-align: center;
+    color:midnightblue;
+    width:100%;
+    
+}
+
+.colour__imgs a:nth-of-type(2n) {
+    margin-right: 0;
+   
+}
+
+.colour__imgs a {
+      text-decoration: none;
+      color: midnightblue;
+      font-size: 16px; 
+      display: inline-block;
+      margin-bottom: 8px;
+      width: calc(50% - 4px);
+
+}
+
+.nav__col__img a:nth-of-type(2n) {
+    margin-right: 0;
+    
+}
+.nav__col__img a {
+      text-decoration: none;
+      color: midnightblue;
+      text-decoration: none;
+      font-size: 16px; 
+      display: inline-block;
+      margin-bottom: 8px;
+      width: calc(50% - 4px);
+
+}
+
+/*==========================================================HELP==================================================================*/
+.smash {
+    float:left;
+    margin: 3%;
+    margin-left:10%
+}
+
+.help__1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    width:300px;
+    height:300px;
+    float:left;
+    background-color:gainsboro;
+}
+
+.img {
+    border-radius: 5px 5px 0 0;
+    width:50%;
+    height: 55%;
+}
+
+.container1 {
+     padding-right: 2% ;
+    padding-bottom: 0;
+    text-align: center;
+    padding-top: 0;
+    margin: 0;
+    float: left;
+    width:98%;
+    height: auto;
+    
+}
+
+.container1 > p {
+    float: center;
+    margin: 0;
+    padding-top: 0;
+    padding-right: 2%;
+    height: auto;
+    width:98%;
+}
+
+/* now g light card*/
+.glight{
+    float:left;
+    margin: 3%;
+}
+
+.help__2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    width:300px;
+    height:300px;
+    float:left;
+    padding-right: 10% 10%;
+    background-color: gainsboro;
+}
+
+.container2 {
+    padding-right: 2% ;
+    padding-bottom: 0;
+    text-align: center;
+    padding-top: 0;
+    margin: 0;
+    float: left;
+    width:98%;
+    height: auto;
+}
+
+.container2 > p {
+    float: center;
+    margin: 0;
+    padding-top: 0;
+    padding-right: 2%;
+    height: auto;
+    width:98%;
+}
+                                                        /* now Front */
+.front {
+    float:left;
+    margin: 3%;
+}
+
+.help__3 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    width:300px;
+    height:300px;
+    float:left;
+    padding-right: 10% 10%;
+    background-color: gainsboro;
+}
+
+.container3 {
+    padding-right: 2% ;
+    padding-bottom: 0;
+    text-align: center;
+    padding-top: 0;
+    margin: 0;
+    float: left;
+    width:98%;
+    height: auto;
+}
+
+.container3 > p {
+    float: center;
+    margin: 0;
+    padding-top: 0;
+    padding-right: 2%;
+    height: auto;
+    width:98%;
+}
+                                                    /* now guide*/
+.guide {
+    float:right;
+    margin-right: 11%;
+}
+
+.help__4 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    width:300px;
+    height:auto;
+    float:left;
+    padding-right: 10% 10%;
+    background-color: gainsboro;
+}
+
+.container4 {
+    padding-right: 2% ;
+    padding-bottom: 0;
+    text-align: center;
+    padding-top: 0;
+    margin: 0;
+    float: left;
+    width:98%;
+    height: auto;
+}
+
+.container4 > p {
+    float: center;
+    margin: 0;
+    padding-top: 0;
+    padding-right: 2%;
+    height: auto;
+    width:98%;
+}   
+
+/* Wikia */
+.wikia {
+    float:right;
+    margin-right:6%;
+}
+
+.help__5 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    width:300px;
+    height:auto;
+    float:left;
+    padding-right: 10% 10%;
+    background-color: gainsboro;
+}
+
+.container5 {
+    padding-right: 2% ;
+    padding-bottom: 0;
+    text-align: center;
+    padding-top: 0;
+    margin: 0;
+    float: left;
+    width:98%;
+    height: auto;
+}
+
+.container5 > p {
+    float: center;
+    margin: 0;
+    padding-top: 0;
+    padding-right: 2%;
+    height: auto;
+    width:98%;
+}  
+
+/* Haria */
+.haria {
+    float:right;
+    margin: 3%;
+    margin-right:5.59%;
+    margin-top: 0;
+    margin-bottom: 10%;
+}
+
+
+.help__6 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    width:300px;
+    height:auto;
+    float:left;
+    padding-right: 10% 10%;
+    background-color: gainsboro;
+}
+
+.container6 {
+    padding-right: 2% ;
+    padding-bottom: 0;
+    text-align: center;
+    padding-top: 0;
+    margin: 0;
+    float: left;
+    width:98%;
+    height: auto;
+}
+
+.container6 > p {
+    float: center;
+    margin: 0;
+    padding-top: 0;
+    padding-right: 2%;
+    height: auto;
+    width:98%;
+}
+        
+/*======================================================================REFS=======================================================*/
+
+.refs ul {
+	text-decoration: none;
+	list-style: none;
+   
+}
+
+.refs {
+	width: 100%;
+	float: right;
+}
+
+/*======================================================================JavaScript FORM=======================================================*/
+#testform .field {
+    width: 98%;
+    margin: 0 5px 10px 5px;
+}
+#testform .field .label {
+    width: 160px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 40%;
+}
+#testform .field__textarea, #testform .field__radiogroup, #testform .field__select, #testform .field__multipleselect {
+    display: inline-block;
+
+}
+#testform .field__radiogroup {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#message {
+margin-top: 10px;
+color: #777777;
+}
+.top_contact >p{
+    font-size: 16px;
+    text-align: center;
+}
+/*======================================================================JavaScript QUIZ=======================================================*/
+
+.alltheevents {
+    border: 3px;
+    
+}
+
+/*-------------------------------------------media!!!------------------------*/
+@media screen and (max-width:478px) {
+	body{
+		font-size: 13px;
+		
+	}
+}
+@media screen and (max-width: 740px) {
+nav {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	
+nav ul {
+		list-style: none;
+		margin: 0 auto;
+		padding-left: 0;
+		
+	}
+    
+nav ul li {
+		text-align: center;
+		margin-left: 0 auto;
+		width: 100%;
+		border-top: 1px soild #000000;
+		border-bottom: 1px solid #000000;
+		border-left: 0px solid #000000;
+		border-right: 0px solid #000000;
+	}
+    
+nav ul li a {
+		padding: 8px 0px;
+		font-size: 16px;
+	}
+    
+.top-home {
+	float: center;
+	font-size: 50px;
+}
+    
+.left-col {
+	width:100%;
+	}
+    
+.sidebar {
+	width:100%;
+
+	float: left;
+	font-size: 15px;
+	width: 100%;
+	
+}
+.container {
+      font-size: 12px;
+        
+    }
+
+}
+
+
+</style>

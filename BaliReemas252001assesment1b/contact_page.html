@@ -1,0 +1,164 @@
+ <!-- NOTE: a Jquery library has been used to create this form. This file can be found in js/vendor. This file was retried from http://www.jqueryscript.net/form/jQuery-Plugin-To-Save-Restore-Form-Data-formsaver-js.html-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title> Living Styles Guide </title>
+        <meta name="viewport">
+		<link rel="stylesheet" type="text/css" href="mycss.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/vendor/jquery.formsaver.js"></script>
+    </head>
+ 
+<body> 
+     <div id="wrapper"> 
+        	<div id="callout"> 
+        		<p> HIT226 Prep for Unit Activity</p>       	
+        	</div>
+        	
+        	<header>
+        	<a href= "#"><img src="pictures/header.png" alt="logo Icon" /></a>
+        	</header>
+        	<nav>
+        		<ul>  
+        		
+        			<li><a href="index.html">Home</a></li>
+        			<li><a href="tips.html">Tips</a></li>
+        			<li><a href="components.html">Components</a></li>
+                    <li><a href="typography.html">Typography</a></li>
+                    <li><a href="color.html">Colour Palette</a></li>
+        			<li><a href="help.html">Helpful Links</a></li>
+        			<li class='active'><a href="refss.html">References</a></li>
+        		</ul>
+         </nav>
+        		<div class="clearfix">
+        		</div>
+    </div>
+    
+    <section class="top_contact">
+    <h1>Contact Us</h1>
+        <p> Want to contact us about a Question, Complaint, Compliment or Other? Fill in the form below and we will get back to you! <br> 
+            We don't like to ask for a users email address so if you interested in a direct reply please include your email in the message box below. <br> Otherwise simply wait till Monday when we answer all inquires on our websites Forum!</p>
+    </section>
+    
+        <form id="testform">
+            
+            <!-- Below is text box thats asks for name-->
+                <div class="field">
+                        <label class="label" for="id_text_input">Full Name:</label>
+                        <input type="text" name="text_input" id="id_text_input">
+                </div>
+            
+            <!-- Below is text box thats asks for message input-->
+                <div class="field">
+                        <label class="label" for="id_textarea">Type Message</label>
+                        <textarea class="field__textarea" name="textarea" id="id_textarea"></textarea>
+                </div>
+    
+            <!-- Below is tick box that asked if user will allow information to be stored-->
+                <div class="field">
+                        <label class="label" for="id_checkbox_input">I allow this information to be stored:</label>
+                        <input type="checkbox" name="checkbox_input" id="id_checkbox_input">
+                </div>
+    
+            <!-- Below are buttons asking user to select country-->
+                <div class="field"> <span class="label" for="id_text_input">Choose Country:</span>
+                        <ul class="field__radiogroup">
+                                <li>
+                                    <label for="id_radio_input_1">
+                                        <input type="radio" name="radio_input" value="1" id="id_radio_input_1">
+                                            India</label>
+                                </li>
+                                <li>
+                                    <label for="id_radio_input_2">
+                                        <input type="radio" name="radio_input" value="2" id="id_radio_input_2">
+                                            USA</label>
+                                </li>
+                                <li>
+                                    <label for="id_radio_input_3">
+                                        <input type="radio" name="radio_input" value="3" id="id_radio_input_3">
+                                            Australia</label>
+                                </li>
+                                <li>
+                                    <label for="id_radio_input_4">
+                                        <input type="radio" name="radio_input" value="1" id="id_radio_input_4">
+                                            Other</label>
+                                </li>
+                        </ul>
+                </div>
+    
+            <!-- Below is the code for the drop down menu asking user to select type of message-->
+                <div class="field">
+                        <label class="label" for="id_select">Select type of messgae</label>
+                        <select class="field__select" name="select" id="id_select">
+                                <option value="">...</option>
+                                <option value="1">Compliment</option>
+                                <option value="2">Question</option>
+                                <option value="3">Complaint</option>
+                                <option value="4">Other</option>
+                        </select>
+                </div>
+            
+            <!-- Below is a scole chooser asking the user to select specific page messaged about-->
+
+            <div class="field">
+                        <label class="label" for="id_multiple_select">Select main page comment refers too:</label>
+                        <select class="field__multipleselect" name="multiple_select" id="id_multiple_select" multiple>
+                                <option value="1">Home</option>
+                                <option value="2">Tips</option>
+                                <option value="3">Components</option>
+                                <option value="4">Typography</option>
+                                <option value="5">Colour Pallet</option>
+                                <option value="6">Helpful Links</option>
+                                <option value="7">Referances</option>
+                                <option value="8">Quiz</option>
+                                <option value="9"> This one</option>
+                                <option value="10"> Website as a whole</option>
+                        </select>
+            </div>
+            
+            <!-- Below is all the code for the buttons-->
+    
+            <div class="controls">
+                <button class="control_save">Save</button>
+                <button class="control_reset" type="reset">Reset</button>
+                <button class="control_restore">Restore</button>
+            </div>
+    
+
+            <div id="message"></div>
+
+    </form>
+    
+             <!-- Below is the code used to display the data recived message Jquery was used within this section-->
+    
+    <script type="text/javascript">
+            $(".control_save").click(function () {
+                $("#testform").saveForm();
+                $("#message").text('Data was successfully saved. Now, try to reset form (via page reloading or "reset" button) and restore saved data.');
+                return false;
+            });
+
+            $(".control_restore").click(function () {
+                $("#testform").restoreForm();
+                $("#message").empty();
+                return false;
+            });
+        </script>
+    
+    <!-- Below is script that links back to the Jquery library-->
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

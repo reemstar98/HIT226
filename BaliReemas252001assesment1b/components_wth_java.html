@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title> Living Styles Guide </title>
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="mycss.css">
+		<script src="js/modernizr.js" type="application/javascript"></script>
+		<script src="js/myscript.js" type="application/javascript"> </script>
+    </head>
+ 
+<body> 
+     <div id="wrapper"> 
+        	<div id="callout"> 
+        		<p> HIT226 Prep for Unit Activity</p>       	
+        	</div>
+        	
+        	<header>
+        	<a href= "#"><img src="pictures/header.png" alt="logo Icon" /></a>
+        	</header>
+        	<nav>
+        		<ul>  
+        		
+        			<li class='active'><a href="index.html">Home</a></li>
+        			<li><a href="tips.html">Tips</a></li>
+        			<li><a href="components.html">Components</a></li>
+                    <li><a href="typography.html">Typography</a></li>
+                    <li><a href="color.html">Colour Palette</a></li>
+        			<li><a href="help.html">Helpful Links</a></li>
+        			<li><a href="refss.html">References</a></li>
+        		</ul>
+         </nav>
+        		<div class="clearfix">
+        		</div>
+    </div>
+    
+<h1>QUIZ</h1>
+
+<h3>First lets try changing some Fonts, sizes & Colours to meet your preferances. Tick below to get your aquired look from what is given. </h3>
+
+<form name="frm">
+<table align="center" cellspacing="20" cellpadding="10">
+<tr>
+<td valign="top">
+<h3>Font Name </h3>
+<input type="radio" name="fr1" id="far"> Arial <br>
+<input type="radio" name="fr1" id="ftr"> Times New Roman <br>
+<input type="radio" name="fr1" id="fcg"> Century Gothic
+</td>
+
+<td valign="top">
+<h3>Font Size </h3>
+<input type="radio" name="fr2" id="fsm"> Small <br>
+<input type="radio" name="fr2" id="fmd"> Medium <br>
+<input type="radio" name="fr2" id="flr"> Large
+</td>
+
+<td valign="top">
+<h3>Font Color </h3>
+<input type="radio" name="fr3" id="fc1"> Black <br>
+<input type="radio" name="fr3" id="fc2"> Red <br>
+<input type="radio" name="fr3" id="fc3"> Green <br>
+<input type="radio" name="fr3" id="fc4"> Blue <br>
+<input type="radio" name="fr3" id="fc5"> White
+</td>
+
+<td valign="top">
+<h3>Background Color </h3>
+<input type="radio" name="fr4" id="bc1"> Black <br>
+<input type="radio" name="fr4" id="bc2"> Red <br>
+<input type="radio" name="fr4" id="bc3"> Green <br>
+<input type="radio" name="fr4" id="bc4"> Blue <br>
+<input type="radio" name="fr4" id="bc5"> White
+</td>
+
+<td valign="top">
+<h3>Preference </h3>
+<input type="button" name="b1" value="View" onclick="show()"> <br><br>
+<input type="button" name="b2" value="Retrieve" onclick="retrieveText()">  <br><br>
+<input type="button" name="b3" value="Clear" onclick="clr()"> 
+</td>
+
+</tr>
+</table>
+</form>
+
+<p align="justify">
+    Ok Now lets try a fun quiz. The insperation for this quiz was taken from a group of examples found online. This quiz is to increase and or test intelligence. These games are used in current day on many online studying websites to help record brain activity. It has been suggested by scientists and researchers that partaking in such games can help strengthen the mind and help cope with some problems that come with mental disabilities. 
+</p>
+    
+<h3> GOOD LUCK!! </h3>
+<center>
+<canvas id="can1" height=550 width=550>
+Hello this is my Canvas
+</canvas>
+
+<br>
+<form name="f1">
+
+<b>Enter No of Triangles :</b> <input type="text" name="res">
+<input type="button" Value="Result" onClick="ans(f1)"> <br>
+<input type="lable" name="l1" size=50>
+</form>
+<br><br>
+
+<canvas id="can2" height=500 width=500>
+Hello this is my Canvas
+</canvas>
+
+<img id="cap" width="0" height="0" src="pictures/captcha.png" alt="Captcha">
+
+<form name="f2">
+<br>
+<b>Enter Above Shown Text : </b> <input type="text" name="l2">
+<input type="button" Value="Result" onClick="ans1(f2)"> <br>
+<br>
+<input type="lable" name="l1" size=50>
+
+<br>
+
+
+</form>
+
+
+
+</center>
+        <footer class="content__footer">
+          <p>&#169;Copyright - Living Style Guide by Reema Bali, s252001, 2017</p>
+        </footer>
+</body>
+
+</html>

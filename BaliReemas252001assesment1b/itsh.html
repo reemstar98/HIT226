@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title> Living Styles Guide </title>
+        <meta name="viewport">
+		<link rel="stylesheet" type="text/css" href="mycss.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/vendor/jquery.formsaver.js"></script>
+    </head>
+ 
+<body> 
+     <div id="wrapper"> 
+        	<div id="callout"> 
+        		<p> HIT226 Prep for Unit Activity</p>       	
+        	</div>
+        	
+        	<header>
+        	<a href= "#"><img src="pictures/header.png" alt="logo Icon" /></a>
+        	</header>
+        	<nav>
+        		<ul>  
+        		
+        			<li><a href="index.html">Home</a></li>
+        			<li><a href="tips.html">Tips</a></li>
+        			<li><a href="components.html">Components</a></li>
+                    <li><a href="typography.html">Typography</a></li>
+                    <li><a href="color.html">Colour Palette</a></li>
+        			<li><a href="help.html">Helpful Links</a></li>
+        			<li class='active'><a href="refss.html">References</a></li>
+        		</ul>
+         </nav>
+        		<div class="clearfix">
+        		</div>
+    </div>
+    
+    <h2> Event Listners and Buttons</h2>
+    
+                                    <!-- event listner, button shows date-->
+        <p>This example uses the addEventListener() method to attach a click event to a button.</p>
+            <button id="myBtn">Try it</button>
+                <p id="demo"></p>
+    
+                                     <!-- event listner, button shows Alert-->
+    <h3> Event listners causing Alerts</h3>
+        <p>This example uses the addEventListener() method to attach a click event to a button.</p>
+            <button id="myNbtn">Try it</button>
+    
+                                     <!-- event listner, button shows resizing amount-->
+    <h3> Event listners resizing windows and amounts</h3>
+        <p>Below is an event listner attached to a button that is linked to the size of a window</p>
+        <p>Try resizing this browser window to trigger the "resize" event handler.</p>
+        <p><b>NOTE! before you resize the page you will not be able to see anything.</b></p>
+            <p id="world"></p>
+
+    <!-- below is a button showing local storage everytime the button is clicked the it is recored in local storage referance used https://www.w3schools.com/html/html5_webstorage.asp-->
+    <h3> Buttons and Local Storage</h3>
+    <p> Every time you click the button below the counter will increase. You can also watch the internal local storage value increase!</p>
+    <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<div id="result"></div>
+<p>Click the button to see the counter increase.</p>
+<p>Close the browser tab (or window), and try again, and the counter will continue to count (It will not reset).</p>
+
+<script src="js/thescript1b.js" type="application/javascript"> </script>
+    
+
+
+        <footer class="content__footer">
+          <p>&#169;Copyright - Living Style Guide by Reema Bali, s252001, 2017</p>
+        </footer>
+
+    </body>
+</html>
